@@ -1,0 +1,79 @@
+.container-hero {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  background:#fff;
+}
+
+.container-exploremore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* لضمان تساوي الارتفاع بين النص والصورة */
+  margin-bottom: 20px; /* لإضافة مساحة بين الجزء العلوي وشريط البحث */
+}
+
+.containerlink {
+  flex: 1; /* يسمح بتوسيع هذا القسم */
+  padding-right: 20px;
+  text-align: left;
+  ; /* مساحة بين النص والصورة */
+  height: 100vh;
+  padding-top: 200px;
+}
+.herodis {
+font-size: 50px ;
+text-align: left;
+color: #455F9E;
+padding-bottom: 50px;
+}
+
+.modal-open {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logform-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+ 
+.button-he{
+  font-size: large !important;
+display: block;
+margin-top: 60px;
+ /* ضبط المسافة بين الزر والنص */
+ font-weight: bold;
+ background-color: #455F9E;
+}
+.button-he:hover{
+  background-color: #E1C59D;
+}
+.container-image {
+  flex: 1; /* يسمح بتوسيع هذا القسم */
+  text-align: right;
+  padding-left: 0px;
+}
+
+.container-image img {
+  max-width: 100%; /* لجعل الصورة مرنة */
+  height: auto; /* للحفاظ على نسبة الطول إلى العرض */
+}

@@ -1,0 +1,104 @@
+
+  .card-containerwhy {
+    width:100%; /* عرض كامل */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center; /* تمركز الكروت */
+    flex-wrap: wrap; /* تفعيل التفاف الكروت */
+    margin: 0; /* تأكد من عدم وجود هوامش */
+    padding: 0; /* تأكد من عدم وجود حشوات */
+    height: auto;
+    gap: 40px;
+}
+
+
+.cardqq {
+  background: #fff;
+  border-radius: 1.25rem; /* 20px */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  overflow: hidden; /* لإظهار الزوايا المستديرة على جميع الجوانب */
+  width: 25rem; /* 456px */
+  margin: 0.625rem; /* 10px */
+  transition: transform 0.2s;
+  height: 30rem; /* 516px */
+  margin-top: 1.875rem; /* 30px */
+  padding: 1.25rem; /* 20px */
+}
+
+  
+  
+  .cardqq:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .card__image {
+    width: 170px; /* Make image responsive */
+    height:170px; /* Maintain aspect ratio */
+    
+    border-radius:10px;
+    object-fit: cover; 
+  }
+  
+ 
+  .card__title {
+    font-size: 1.5rem; /* Increased font size for title */
+    font-weight: bold;
+    margin: 0 0 10px; /* Space between title and description */
+    color: #0442c3; /* Dark color for contrast */
+  }
+  
+  .card__description {
+    font-size: 24;
+    color: #000000; /* Lighter color for description */
+    line-height: 1.5; /* Improved readability */
+text-align: justify;  }
+  
+.buttonwhy {
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* إزالة الخط تحت النص */
+  border: none; /* إزالة الحدود حول الزر */
+  outline: none;
+  background-color: #455f9e; /* إزالة أي خطوط تميز الزر عند التركيز عليه */
+}
+
+.buttonwhy:hover{
+  background-color: #E1C59D;
+}
+
+.testde {
+  text-decoration: none; /* إزالة الخط تحت النص داخل الرابط */
+}
+
+
+
+/* عندما يكون عرض الشاشة أقل من 1200px */
+@media (max-width: 75rem) {
+  .cardqq {
+    width: 90%; /* 100% العرض على الشاشات الصغيرة */
+    height: 28.125rem; /* 450px */
+  }
+}
+
+/* عندما يكون عرض الشاشة أقل من 768px */
+@media (max-width: 48rem) {
+  .cardqq {
+    width: 100%; /* عرض البطاقة بالكامل */
+    height: 28rem; /* تقليل الارتفاع */
+  }
+}
+
+/* عندما يكون عرض الشاشة أقل من 480px */
+@media (max-width: 30rem) {
+  .cardqq {
+    width: 100%; /* عرض البطاقة بالكامل */
+    height: 26.25rem; /* تقليل الارتفاع */
+  }
+}
+
