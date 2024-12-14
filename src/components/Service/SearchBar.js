@@ -81,7 +81,6 @@ const BookingSearch = () => {
 
     return (
         <div id="SearchBar" className="booking-container">
-            {isLoggedIn && <p>Welcome, {username}!</p>}
 
             <form className="booking-form" onSubmit={handleSubmit}>
                 <div className="form-group">
